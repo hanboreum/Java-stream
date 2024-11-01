@@ -13,5 +13,13 @@ public class MySupplier {
         System.out.println(randomSupplier.get());
         System.out.println(randomSupplier.get());
         System.out.println(randomSupplier.get());
+
+        printRandomDoubles(randomSupplier, 4);
+    }
+
+    public static void printRandomDoubles(Supplier<Double> supplier, int count) {
+        for( int i = 0; i < count; i++ ) {
+            System.out.println(supplier.get());
+        }
     }
 }
