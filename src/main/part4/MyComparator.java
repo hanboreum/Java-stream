@@ -22,5 +22,9 @@ public class MyComparator {
         //id 순으로 정렬
         Collections.sort(users, idComparator);
         System.out.println(users);
+
+        //이름 정렬
+        Collections.sort(users, (u1, u2) -> u1.getName().compareTo(u2.getName()));
+        System.out.println(users);
     }
 }
