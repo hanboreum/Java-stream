@@ -5,13 +5,12 @@ import main.util.Adder;
 
 public class Lambda {
     public static void main(String[] args) {
+        //인터페이스 사용
         Function<Integer, Integer> myAdder = new Adder();
         int result = myAdder.apply(10);
 
-        Function <Integer, Integer> LambdaAdder = (Integer x)
-        ->{
-            return x + 10;
-        };
+        //람다식 사용
+        Function <Integer, Integer> LambdaAdder =  x ->  x + 10;
         int lResult = LambdaAdder.apply(10);
 
         System.out.println(result);
