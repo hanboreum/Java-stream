@@ -1,7 +1,7 @@
 package main.part4;
 
 import java.util.function.Supplier;
-
+//supplier 는 input parameter 가 없고 리턴만 한다.
 public class MySupplier {
 
     public static void main(String[] args) {
