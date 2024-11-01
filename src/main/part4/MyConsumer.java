@@ -24,11 +24,16 @@ public class MyConsumer {
 
         Consumer<Integer> differentProcess = x -> System.out.println("different processing "+ x);
         process(integerInputs, differentProcess);
+
+        Consumer<Double> doubleConsumer = x -> System.out.println("Double consumer processor " + x);
+        List<Double> doubleInputs = Arrays.asList(4.44, 3.0, 5.0);
+
+        process(doubleInputs, doubleConsumer);
     }
 
     //inputs 을 process 해 줄 consumer
-    public static void process(List<Integer> inputs, Consumer<Integer> processor) {
-        for (Integer i : inputs) {
+    public static <T> void process(List<T> inputs, Consumer<T> processor) {
+        for (T i : inputs) {
             //integer 를 하나씩 꺼내 processor 을 호출해줌
             processor.accept(i);
         }
