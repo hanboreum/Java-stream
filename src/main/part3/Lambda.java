@@ -1,7 +1,7 @@
-package main;
+package main.part3;
 
 import java.util.function.Function;
-import main.util.Adder;
+import main.part3.util.Adder;
 
 public class Lambda {
     public static void main(String[] args) {
