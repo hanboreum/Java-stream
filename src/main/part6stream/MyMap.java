@@ -19,5 +19,11 @@ public class MyMap {
                 .collect(Collectors.toList());
 
         System.out.println(numberListX2);
+
+        //input, output 이 다른 경우
+        Stream<Integer> numberListStream = numerList.stream();
+        Stream<String> numberString = numberListStream.map(x-> " number is " + x);
+        List<String> strList = numberString.collect(Collectors.toList());
+        System.out.println(strList);
     }
 }
