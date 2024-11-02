@@ -1,10 +1,10 @@
-package main.part4;
+package main.part4functionalinterface;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import main.part4.model.User;
+import main.part4functionalinterface.model.User;
 
 //Comparator 두 개의 객체를 비교해 정렬하는데 사용
 public class MyComparator {

@@ -1,4 +1,4 @@
-package main.part3;
+package main.part3lambda;
 
 
 import java.util.function.BiFunction;

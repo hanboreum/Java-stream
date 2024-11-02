@@ -1,4 +1,4 @@
-package main.part5.model;
+package main.part5methodreference.model;
 
 public abstract class Car {
     protected String name;

@@ -1,4 +1,4 @@
-package main.part4.model;
+package main.part4functionalinterface.model;
 
 public class User {
     private int id;

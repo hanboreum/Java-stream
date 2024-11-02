@@ -1,4 +1,4 @@
-package main.part4;
+package main.part4functionalinterface;
 
 import java.util.function.Supplier;
 //supplier 는 input parameter 가 없고 리턴만 한다.

@@ -1,4 +1,4 @@
-package main.part5;
+package main.part5methodreference;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

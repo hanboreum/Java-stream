@@ -1,11 +1,10 @@
-package main.part5;
+package main.part5methodreference;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
-import main.part4.model.User;
+import main.part4functionalinterface.model.User;
 
 //매서드 래퍼런스의 또 다른 케이스
 public class methodReference2 {

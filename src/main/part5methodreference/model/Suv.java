@@ -1,4 +1,4 @@
-package main.part5.model;
+package main.part5methodreference.model;
 
 public class Suv extends Car {
 

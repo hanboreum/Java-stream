@@ -1,4 +1,4 @@
-package main.part4;
+package main.part4functionalinterface;
 
 import java.util.ArrayList;
 import java.util.Arrays;

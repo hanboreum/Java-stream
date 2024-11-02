@@ -1,6 +1,6 @@
-package main.part3;
+package main.part3lambda;
 
-import main.part3.util.TriFunctionItf;
+import main.part3lambda.util.TriFunctionItf;
 
 public class TriFunc {
 

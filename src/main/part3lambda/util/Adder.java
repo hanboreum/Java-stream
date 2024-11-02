@@ -1,4 +1,4 @@
-package main.part3.util;
+package main.part3lambda.util;
 
 import java.util.function.Function;
 

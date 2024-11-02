@@ -1,15 +1,15 @@
-package main.part5;
+package main.part5methodreference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiFunction;
-import main.part4.model.User;
-import main.part5.model.Car;
-import main.part5.model.Sedan;
-import main.part5.model.Suv;
-import main.part5.model.Van;
+import main.part4functionalinterface.model.User;
+import main.part5methodreference.model.Car;
+import main.part5methodreference.model.Sedan;
+import main.part5methodreference.model.Suv;
+import main.part5methodreference.model.Van;
 
 /**
  * constructorReference ClassName::new 클래스의 constructor 를 지정할 때
