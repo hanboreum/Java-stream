@@ -13,9 +13,11 @@ public class MyMap {
 
     public static void main(String[] args) {
         List<Integer> numerList = Arrays.asList(1, 2, 3, 4, -5, -610);
-        Stream<Integer> numberStream = numerList.stream();
-        Stream<Integer> numberStreamX2 = numberStream.map(x -> x * 2);
-        List<Integer> numberListX2 = numberStreamX2.collect(Collectors.toList());
+        List<Integer> numberListX2 = numerList
+                .stream()
+                .map(x -> x * 2)
+                .collect(Collectors.toList());
+
         System.out.println(numberListX2);
     }
 }
