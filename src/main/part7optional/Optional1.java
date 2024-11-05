@@ -3,7 +3,7 @@ package main.part7optional;
 import java.util.Optional;
 import main.part6stream.model.User;
 
-public class optional1 {
+public class Optional1 {
     public static void main(String[] args) {
         User user1 = new User()
                 .setId(1001)
