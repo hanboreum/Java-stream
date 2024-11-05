@@ -1,6 +1,7 @@
 package main.part6stream.model;
 
 import java.util.List;
+import java.util.Optional;
 
 public class User {
     private int id;
@@ -8,6 +9,8 @@ public class User {
     private String emailAddress;
     private boolean isVerified;
     private List<Integer> friendUserIds;
+
+    private String optionalEmail;
 
     public int getId() {
         return id;
@@ -24,6 +27,15 @@ public class User {
 
     public User setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public Optional<String> getOptionalEmail() {
+        return Optional.ofNullable(optionalEmail);
+    }
+
+    public User setOptionalEmail(String optionalEmail) {
+        this.optionalEmail = optionalEmail;
         return this;
     }
 
