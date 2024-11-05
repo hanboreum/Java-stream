@@ -83,4 +83,14 @@ System.out.println(compareLength.compare("Apple", "Banana"));  // 출력: 0 ("Ap
 - Distinct: 중복되는 데이터가 제거된 stream 을 return <br>
 - FlatMap: 다차원 배열을 1차원 배열로 만들어줌 <br>
 
-
+### Part7. Optional
+Optional: null 일수도, 아닐 수도 있는 오브젝트를 담은 상자 <br>
+- of: null 이 아닌 오브젝트를 이용해 optional 을 만들 때 
+- Empty: 빈 optional 을 만들 때
+- ofNullable: null 인지 아닌지 알 수 없는 오브젝트로 optional 을 만들 때
+- irPresent:  안의 오브젝트의 null 여부 체크. null 일 시 false
+- get: optional 안의 값을 추출. null 일 시 에러
+- orElse: optional 이 null 이 아니라면 안의 값을, null 이라면 other 로 공감된 값을 리턴
+- ifPresent: optional 이 null 이 아니라면 action 실행
+- map: optional 이 null 이 mapper 적용
+- flatMap: mapper 의 리턴 값이 또 다른 optional 이라면 한 단계의 optional 이 되도록 납작하게 해 줌
