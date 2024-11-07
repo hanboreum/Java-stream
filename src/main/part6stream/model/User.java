@@ -10,6 +10,8 @@ public class User {
     private String emailAddress;
     private boolean isVerified;
     private List<Integer> friendUserIds;
+    private String optionalEmail;
+
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
@@ -23,7 +25,7 @@ public class User {
     private LocalDateTime createdAt;
 
 
-    private String optionalEmail;
+
 
     public int getId() {
         return id;
