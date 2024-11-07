@@ -13,4 +13,9 @@ public class EmailService {
         user.getOptionalEmail()
                 .ifPresent(email -> System.out.println("you need more friends" + email));
     }
+
+    public void sendVerifiedEmail(User user) {
+        user.getOptionalEmail().ifPresent(email ->
+                System.out.println(" sending verify your email " + email));
+    }
 }
