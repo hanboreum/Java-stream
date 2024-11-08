@@ -141,8 +141,20 @@ Optional: null 일수도, 아닐 수도 있는 오브젝트를 담은 상자 <br
 단점 - 항상 속도가 향상되는 것은 아님. 공통으로 사용하는 리소스가 있을 경우 잘못된 결과가 나오거나 아예 오류가 날 수 있음(deadlock).<br>
 이를 막기 위해 mutex, semaphore 등의 병렬 처리 기술을 이용하면 순차 처리보다 느려질 수 있다.<br>
 순서가 필요 없을 때 사용하는것이 좋다<br>
-
-- <b>summary<b>
+<b>
+- summary </b>
 - Stream 의 다양한 종결 처리들 : max/ min/ count/ allMatch/ anyMatch/ findFirst/ findAny/ reduce/ forEach
 - Collector 를 이용한 종결처리들: toList/ mapping/ reducing/ toMap/ groupingBy/ partitioningBy
 - Parallel Stream 의 장점과 단점
+<br>
+<br> <b>
+### Part9. 함수형 프로그래밍의 응용 
+
+- Scope(유효범위): 변수에 접근할 수 있는 범위. 함수 안에 함수가 있을 때 내부 함수에서 외부 함수에 있는 변수에 접근이 가능하다 (lexical scope). 그 반대는 불가능하다.
+- Closure: 내부 함수가 존재하는 한 내부 함수가 사용한 외부 함수의 변수들 역시 계속 존재한다. 이렇게 lexical scope 를 포함하는 함수를 closure 하고 한다. 이 때 내부 함수가 사용한 외부
+함수의 변수들은 내부 함수 선언 당시로부터 변할 수 없기 때문에 final 로 선언되지 않더라도 암묵적으로 final 로 취급된다. 
+- Curry: 여러 개의 매개변수를 받는 함수를 중첩된 여러 개의 함수로 쪼개어 매개 변수를 한 번에 받지 않고 여러 단계에 걸쳐 나눠 받을 수 있게 하는 기술. Closure 의 응용이다. 
+- Lazy Evaluation: Lambda 의 계산은 그 결과값이 필요할 때가 되어서야 계산된다. 이를 이용해 불필요한 계산을 줄이거나 해당 코드의 실행 순서를 의도적으로 미뤄 최적화를 할 수 있다. 
+- Function composition: 여러 개의 함수를 합쳐 하나의 새로운 함수를 만드는 것
+<br>
+- Summary: 
