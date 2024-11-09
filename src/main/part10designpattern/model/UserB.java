@@ -64,4 +64,32 @@ public class UserB {
                 ", createdAt=" + createdAt +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public boolean isVerified() {
+        return isVerified;
+    }
+
+    public List<Integer> getFriendUserIds() {
+        return friendUserIds;
+    }
+
+    public String getOptionalEmail() {
+        return optionalEmail;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 }
