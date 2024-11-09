@@ -162,3 +162,4 @@ Optional: null 일수도, 아닐 수도 있는 오브젝트를 담은 상자 <br
 - 구조 패턴 Structural Patterns: 상속을 이용해 클래스/ 오브젝트를 조합해 더 발전된 구조로 만드는 패턴
 - 행동 패턴 Behavioral Patterns: 필요한 작업을 여러 객체에 분배해 객체간 결합도를 줄이게 해주는 패턴 <br>
 - Builder Pattern: 대표적인 생성 패턴. 객체 생서에 대한 로직과 표현에 대한 로직을 분리해준다. 객체의 생성 과정을 정의하고싶거나 필드가 많아 constructor 가 복잡해질 때 유용
+- Decorator Pattern: 구조 패턴의 하나. 용도에 따라 객체에 기능을 계속 추가 할 수 있게 해준다. 
