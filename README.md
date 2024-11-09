@@ -157,4 +157,8 @@ Optional: null 일수도, 아닐 수도 있는 오브젝트를 담은 상자 <br
 - Lazy Evaluation: Lambda 의 계산은 그 결과값이 필요할 때가 되어서야 계산된다. 이를 이용해 불필요한 계산을 줄이거나 해당 코드의 실행 순서를 의도적으로 미뤄 최적화를 할 수 있다. 
 - Function composition: 여러 개의 함수를 합쳐 하나의 새로운 함수를 만드는 것
 <br>
-- Summary: 
+### Part10. 디자인 패턴
+- 생성 패턴 Creational Patterns: 오브젝트의 생성에 관련된 패턴
+- 구조 패턴 Structural Patterns: 상속을 이용해 클래스/ 오브젝트를 조합해 더 발전된 구조로 만드는 패턴
+- 행동 패턴 Behavioral Patterns: 필요한 작업을 여러 객체에 분배해 객체간 결합도를 줄이게 해주는 패턴 <br>
+- Builder Pattern: 대표적인 생성 패턴. 객체 생서에 대한 로직과 표현에 대한 로직을 분리해준다. 객체의 생성 과정을 정의하고싶거나 필드가 많아 constructor 가 복잡해질 때 유용

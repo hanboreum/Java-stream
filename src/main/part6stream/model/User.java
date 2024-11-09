@@ -11,6 +11,7 @@ public class User {
     private boolean isVerified;
     private List<Integer> friendUserIds;
     private String optionalEmail;
+    private LocalDateTime createdAt;
 
 
     public LocalDateTime getCreatedAt() {
@@ -21,11 +22,6 @@ public class User {
         this.createdAt = createdAt;
         return this;
     }
-
-    private LocalDateTime createdAt;
-
-
-
 
     public int getId() {
         return id;
@@ -84,7 +80,8 @@ public class User {
     @Override
     public String toString() {
         return "User [id=" + id + ", " + (name != null ? "name=" + name + ", " : "")
-                + (emailAddress != null ? "emailAddress=" + emailAddress + ", " : "") + "isVerified=" + isVerified
+                + (emailAddress != null ? "emailAddress=" + emailAddress + ", " : "")
+                + "isVerified=" + isVerified
                 + ", " + (friendUserIds != null ? "friendUserIds=" + friendUserIds : "") + "]";
     }
 }
